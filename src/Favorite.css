@@ -1,0 +1,91 @@
+.favorite {
+  width: 37vw;
+  border: 2px solid rgb(152, 43, 156);
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 96px;
+  padding: 10px;
+  min-height: 100px;
+  max-height: 70vh;
+  overflow-y: auto;
+
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 5px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.favorite-item span {
+  display: block;
+  text-align: left;
+  flex-grow: 1;
+  font-weight: 500;
+}
+
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  gap: 5px;
+}
+
+.add input {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 5px;
+
+}
+
+.add button {
+  background-color: rgb(183, 135, 227);
+  border: none;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  padding: 10px;
+  width: 40%;
+  padding: 5px;
+  margin-bottom: 5px;
+
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+.favorite{
+  width: 100vw;
+  margin-left: 25px;
+  min-height: 200px;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 793px) {
+.favorite{
+  width: 50vw;
+  margin-left: 20px;
+  min-height: 200px;
+  margin-top: 30px;
+}
+}

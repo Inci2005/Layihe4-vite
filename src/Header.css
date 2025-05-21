@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.header {
+  width: 100%;
+  border: 1px solid black;
+  background: linear-gradient(135deg, #cb11bf 0%, #8625fc 100%);
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header p {
+  font-size: 35px;
+  font-weight: bolder;
+  color: white;
+   font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .header {
+    width: 174%;
+  }
+}
+

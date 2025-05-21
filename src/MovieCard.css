@@ -1,0 +1,49 @@
+.movie-card{
+    display: flex;
+margin-bottom: 20px;
+}
+.movie-info{
+    width: 20vw;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.movie-info button {
+  width: 150px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  background-color: rgb(183, 135, 227);
+  border: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.movie-info button:hover {
+  cursor: pointer;
+  background-color: rgb(196, 156, 232);
+}
+
+.movie-info button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+.movie-card{
+  flex-direction: column;
+}
+.movie-info{
+  width: 80vw;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+ .movie-card{
+  flex-direction: column;
+ }
+ .movie-info{
+  width: 45vw;
+ }
+}
